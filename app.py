@@ -19,7 +19,7 @@ st.title("📊 Earnings Manipulator Dataset")
 # -------------------------------------------------
 @st.cache_data
 def load_data():
-    return pd.read_excel("earnings_data.xlsx")
+    return pd.read_excel("Earnings Manipulator (1).xlsx")
 
 df = load_data()
 
@@ -47,5 +47,7 @@ column = st.selectbox(
 )
 
 st.write(df[column].describe())
+
+
 
 
